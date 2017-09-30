@@ -1,8 +1,8 @@
 export const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyCmRchtubsJ4CljwasIWsYBb49D06loCTM",
-    authDomain: "carga-de-credito-fer.firebaseapp.com",
-    databaseURL: "https://carga-de-credito-fer.firebaseio.com",
-    projectId: "carga-de-credito-fer",
-    storageBucket: "carga-de-credito-fer.appspot.com",
-    messagingSenderId: "614513872513"
-  };
+  apiKey: "AIzaSyA9h6ROuimeAFR2j0o73C3kBFz81QiPF1E",
+  authDomain: "pianotematico-fba7c.firebaseapp.com",
+  databaseURL: "https://pianotematico-fba7c.firebaseio.com",
+  projectId: "pianotematico-fba7c",
+  storageBucket: "pianotematico-fba7c.appspot.com",
+  messagingSenderId: "606224210513"
+};

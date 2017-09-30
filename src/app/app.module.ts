@@ -14,19 +14,22 @@ import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Vibration } from '@ionic-native/vibration';
 
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { AuthService } from '../auth.service';
 import { NavService } from '../nav.service';
+import { Media, MediaObject } from '@ionic-native/media';
+import { MediaPlugin } from 'ionic-native';
 
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,
+    HomePage,
     AboutPage,
     ContactPage,
-    HomePage,
     TabsPage,
-    LoginPage,
     RegisterPage
   ],
   imports: [
@@ -34,24 +37,25 @@ import { NavService } from '../nav.service';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule
-
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
+    HomePage,
     AboutPage,
     ContactPage,
-    HomePage,
     TabsPage,
-    LoginPage,
     RegisterPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthService,
-    NavService
+    Vibration,
+    Media,
+    NavService,
+    AuthService
   ]
 })
 export class AppModule {}

@@ -1,3 +1,82 @@
-page-home {
+ion-content{
+}
 
+page-home {
+    .tecla {
+        background-color: black;
+        font-family: Cambria;
+        height: 19%;
+    }
+
+    .button-md:hover:not(.disable-hover) {
+        background-color: white;
+    }
+
+    .tecla1autos {
+        background: url("../assets/images/auto1.png") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla2autos {
+        background: url("../assets/images/auto2.png") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla3autos {
+        background: url("../assets/images/auto3.png") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla4autos {
+        background: url("../assets/images/auto4.ico") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla5autos {
+        background: url("../assets/images/auto5.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla1animales {
+        background: url("../assets/images/mono.jpg") no-repeat center center ; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla2animales {
+        background: url("../assets/images/perro.png") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla3animales {
+        background: url("../assets/images/vaca.png") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla4animales {
+        background: url("../assets/images/gato.ico") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla5animales {
+        background: url("../assets/images/tigre.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla1frases {
+        background: url("../assets/images/pepe1.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla2frases {
+        background: url("../assets/images/pepe2.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla3frases {
+        background: url("../assets/images/pepe3.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla4frases {
+        background: url("../assets/images/pepe4.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+    .tecla5frases {
+        background: url("../assets/images/pepe5.jpg") no-repeat center center; width: 360px; height: 80px; background-size: contain;
+        margin: 0px;
+    }
+}
+
+.ToastWarning{
+    > div{
+      background-color:#FF0015!important;
+      text-align: center;
+  }
 }

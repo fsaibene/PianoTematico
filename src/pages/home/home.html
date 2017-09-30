@@ -1,22 +1,22 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Piano Tematico</ion-title>
+    <ion-buttons end>
+      <button ion-button style="color: red; background-color: grey;" (click)="logout()"><ion-icon name="power"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-
-  <div style="width:800px; margin:0 auto;">
-    <button ion-button (click)="logout()">Logout</button>
-  </div>
-
+<ion-content>
+  <ion-navbar style="margin: 0 auto; width:100%">
+    <ion-select [(ngModel)]="tematica">
+      <ion-option value="autos">Autos</ion-option>
+      <ion-option value="animales">Animales</ion-option>
+      <ion-option value="frases">Frases</ion-option>
+    </ion-select>
+  </ion-navbar>
+  <button style="border-color: black; border-style: solid; border-width:2px" [ngClass]="{'tecla1autos': tematica == 'autos', 'tecla1animales': tematica == 'animales', 'tecla1frases': tematica == 'frases'}" ion-button danger block (click)="tecla1()"></button>
+  <button style="border-color: black; border-style: solid; border-width:2px" [ngClass]="{'tecla2autos': tematica == 'autos', 'tecla2animales': tematica == 'animales', 'tecla2frases': tematica == 'frases'}" ion-button danger block (click)="tecla2()"></button>
+  <button style="border-color: black; border-style: solid; border-width:2px" [ngClass]="{'tecla3autos': tematica == 'autos', 'tecla3animales': tematica == 'animales', 'tecla3frases': tematica == 'frases'}" ion-button danger block (click)="tecla3()"></button>
+  <button style="border-color: black; border-style: solid; border-width:2px" [ngClass]="{'tecla4autos': tematica == 'autos', 'tecla4animales': tematica == 'animales', 'tecla4frases': tematica == 'frases'}" ion-button danger block (click)="tecla4()"></button>
+  <button style="border-color: black; border-style: solid; border-width:2px" [ngClass]="{'tecla5autos': tematica == 'autos', 'tecla5animales': tematica == 'animales', 'tecla5frases': tematica == 'frases'}" ion-button danger block (click)="tecla5()"></button>
 </ion-content>
